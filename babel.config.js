@@ -3,6 +3,7 @@ module.exports = {
         ['@babel/preset-env', {
             targets: {
                 browsers: '> 0.25%, not dead',
+                node: true,
             },
             exclude: ['@babel/plugin-transform-regenerator'],
         }],

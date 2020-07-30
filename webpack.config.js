@@ -14,6 +14,9 @@ module.exports = {
             commonjs: libraryName,
         },
         libraryTarget: 'umd',
+        // When using umd, to fix problems with usage in node
+        // https://github.com/webpack/webpack/issues/6677
+        globalObject: 'this',
         // Allow common-js to require directly
         // useAsync = require('react-use-async-hook')
         // rather than require('react-use-async-hook').default

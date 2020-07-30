@@ -1,5 +1,5 @@
-function configger(defaults, aliases) {
-    return (config) => {
+function configger({ defaults = {}, aliases = {} } = {}) {
+    return (config = {}) => {
         const result = {
             ...config,
         };
