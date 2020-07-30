@@ -1,5 +1,5 @@
-const { expect } = require('chai');
-const configger = require('../lib');
+import { expect } from 'chai';
+import configger from '../src';
 
 describe('Defaults', () => {
     // eslint-disable-next-line prefer-arrow-callback
@@ -206,5 +206,20 @@ describe('Defaults with Aliases', () => {
             string: 'efg',
             NUMBER: 2,
         });
+    });
+
+    // eslint-disable-next-line prefer-arrow-callback
+    it('Should ignore keyToBeAliased when alias is also provided', function () {
+        const aliases = {
+            number: 'NUMBER',
+        };
+
+        const getConfig = configger({ aliases });
+        const config = getConfig({ number: 2, NUMBER: 3 });
+
+        expect(config).to.deep.equal({
+            NUMBER: 3,
+        });
+        expect(config.number).to.be.undefined;
     });
 });
