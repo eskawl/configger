@@ -1,5 +1,5 @@
 {
-  "name": "configger",
+  "name": "just-config",
   "version": "0.0.1",
   "description": "Easily set default values and aliases for configurations",
   "main": "lib/index.js",

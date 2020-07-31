@@ -1,7 +1,7 @@
 const path = require('path');
 const babelConfig = require('./babel.config');
 
-const libraryName = 'configger';
+const libraryName = 'just-config';
 
 module.exports = {
     entry: './src/index.js',

@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import configger from '../src';
+import configurator from '../src';
 
 describe('Defaults', () => {
     // eslint-disable-next-line prefer-arrow-callback
@@ -9,7 +9,7 @@ describe('Defaults', () => {
             number: 1,
         };
 
-        const getConfig = configger({ defaults });
+        const getConfig = configurator({ defaults });
         const config = getConfig({});
 
         expect(config).to.deep.equal(defaults);
@@ -22,7 +22,7 @@ describe('Defaults', () => {
             number: 1,
         };
 
-        const getConfig = configger({ defaults });
+        const getConfig = configurator({ defaults });
         const config = getConfig();
 
         expect(config).to.deep.equal(defaults);
@@ -35,7 +35,7 @@ describe('Defaults', () => {
             number: 1,
         };
 
-        const getConfig = configger();
+        const getConfig = configurator();
         const config = getConfig(input);
 
         expect(config).to.deep.equal(input);
@@ -43,7 +43,7 @@ describe('Defaults', () => {
 
     // eslint-disable-next-line prefer-arrow-callback
     it('Should return empty config when no defaults are set and no config is provided', function () {
-        const getConfig = configger();
+        const getConfig = configurator();
         const config = getConfig();
 
         expect(config).to.deep.equal({});
@@ -56,7 +56,7 @@ describe('Defaults', () => {
             number: 1,
         };
 
-        const getConfig = configger({ defaults });
+        const getConfig = configurator({ defaults });
         const config = getConfig({ string: 'efg' });
 
         expect(config).to.deep.equal({
@@ -74,7 +74,7 @@ describe('Aliases', () => {
             2: 'TWO',
         };
 
-        const getConfig = configger({ aliases });
+        const getConfig = configurator({ aliases });
         const config = getConfig({
             1: 'red',
             2: 'blue',
@@ -93,7 +93,7 @@ describe('Aliases', () => {
             2: 'TWO',
         };
 
-        const getConfig = configger({ aliases });
+        const getConfig = configurator({ aliases });
         const config = getConfig({
             1: 'red',
             2: 'blue',
@@ -110,7 +110,7 @@ describe('Aliases', () => {
             2: 'TWO',
         };
 
-        const getConfig = configger({ aliases });
+        const getConfig = configurator({ aliases });
         const config = getConfig({
             1: 'red',
             2: 'blue',
@@ -131,7 +131,7 @@ describe('Aliases', () => {
             2: 'TWO',
         };
 
-        const getConfig = configger({});
+        const getConfig = configurator({});
         const config = getConfig(input);
 
         expect(config).to.deep.equal(input);
@@ -151,7 +151,7 @@ describe('Defaults with Aliases', () => {
             number: 1,
         };
 
-        const getConfig = configger({ defaults, aliases });
+        const getConfig = configurator({ defaults, aliases });
         const config = getConfig({
             1: 'red',
             2: 'blue',
@@ -178,7 +178,7 @@ describe('Defaults with Aliases', () => {
             2: 'TWO',
         };
 
-        const getConfig = configger({ defaults, aliases });
+        const getConfig = configurator({ defaults, aliases });
         const config = getConfig({ string: 'efg', number: 1 });
 
         expect(config).to.deep.equal({
@@ -199,7 +199,7 @@ describe('Defaults with Aliases', () => {
             2: 'TWO',
         };
 
-        const getConfig = configger({ defaults, aliases });
+        const getConfig = configurator({ defaults, aliases });
         const config = getConfig({ string: 'efg', number: 2 });
 
         expect(config).to.deep.equal({
@@ -214,7 +214,7 @@ describe('Defaults with Aliases', () => {
             number: 'NUMBER',
         };
 
-        const getConfig = configger({ aliases });
+        const getConfig = configurator({ aliases });
         const config = getConfig({ number: 2, NUMBER: 3 });
 
         expect(config).to.deep.equal({

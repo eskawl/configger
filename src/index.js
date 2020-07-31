@@ -1,4 +1,4 @@
-function configger({ defaults = {}, aliases = {} } = {}) {
+function configurator({ defaults = {}, aliases = {} } = {}) {
     return (config = {}) => {
         const result = {
             ...config,
@@ -26,4 +26,4 @@ function configger({ defaults = {}, aliases = {} } = {}) {
     };
 }
 
-export default configger;
+export default configurator;
