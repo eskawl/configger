@@ -4,7 +4,7 @@ Easily set default values and aliases for configurations
 
 [![Coverage Status](https://coveralls.io/repos/github/eskawl/configger/badge.svg?branch=master)](https://coveralls.io/github/eskawl/configger?branch=master)
 ![Build](https://github.com/eskawl/configger/workflows/Build/badge.svg)
-[![License](https://badgen.net/npm/license/@eskawl/configger)](https://www.npmjs.org/package/@eskawl/configger)
+[![License](https://img.shields.io/npm/l/@eskawl/configger)](https://www.npmjs.org/package/@eskawl/configger)
 [![npm version](https://img.shields.io/npm/v/@eskawl/configger.svg?logo=npm&style=popout)](https://www.npmjs.org/package/@eskawl/configger)
 
 ### Installing
