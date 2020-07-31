@@ -16,6 +16,9 @@
   "files": [
     "lib/**.*"
   ],
+  "repository": {
+    "url": "https://github.com/eskawl/configger"
+  },
   "keywords": [
     "configuration",
     "defaults",
