@@ -1,6 +1,6 @@
 {
   "name": "@eskawl/configger",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Easily set default values and aliases for configurations",
   "main": "lib/index.js",
   "scripts": {
