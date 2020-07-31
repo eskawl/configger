@@ -9,7 +9,7 @@
     "coverage": "nyc --reporter=lcov mocha",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
-    "publish": "npm publish --access=public",
+    "release": "npm publish --access=public",
     "test:watch": "mocha --watch",
     "test": "mocha"
   },
