@@ -12,13 +12,13 @@ Easily set default values and aliases for configurations
 Using NPM:
 
 ```bash
-npm i configger
+npm i @eskawl/configger
 ```
 
 Using yarn:
 
 ```bash
-yarn add configger
+yarn add @eskawl/configger
 ```
 
 
