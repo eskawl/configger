@@ -3,3 +3,6 @@ node_modules
 # Coverage
 .nyc_output
 coverage
+
+# Error logs
+*-error.log
