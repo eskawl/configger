@@ -25,11 +25,11 @@ yarn add @eskawl/configger
 
 ### Importing
 ```js
-const configger = require('configger')
+const configger = require('@eskawl/configger')
 ```
 or in ES6
 ```js
-import configger from 'configger';
+import configger from '@eskawl/configger';
 ```
 
 ### Usage 
