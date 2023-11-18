@@ -6,6 +6,8 @@ Easily set default values and aliases for configurations
 ![Build](https://github.com/eskawl/configger/workflows/Build/badge.svg)
 [![License](https://img.shields.io/npm/l/@eskawl/configger)](https://www.npmjs.org/package/@eskawl/configger)
 [![npm version](https://img.shields.io/npm/v/@eskawl/configger.svg?logo=npm&style=popout)](https://www.npmjs.org/package/@eskawl/configger)
+![npm package minimized gzipped size (select exports)](https://img.shields.io/bundlejs/size/%40eskawl%2Fconfigger)
+
 
 ### Installing
 
@@ -25,11 +27,11 @@ yarn add @eskawl/configger
 
 ### Importing
 ```js
-const configger = require('configger')
+const configger = require('@eskawl/configger')
 ```
 or in ES6
 ```js
-import configger from 'configger';
+import configger from '@eskawl/configger';
 ```
 
 ### Usage 
